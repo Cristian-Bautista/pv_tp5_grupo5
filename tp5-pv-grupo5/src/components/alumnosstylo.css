@@ -22,7 +22,7 @@ body {
   font-size: 1.2rem;
 }
 .navbar {
-  background-color: #3b2729; /* Cambiá el color a gusto */
+  background-color: #3b2729; 
   padding: 1rem;
   display: flex;
   align-items: center;
