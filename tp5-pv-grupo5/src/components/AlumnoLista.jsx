@@ -6,28 +6,21 @@ const AlumnoLista = ({ alumnos, onDelete }) => {
   const handleDelete = (id) => {
     const confirmar = window.confirm('¿Estás seguro de eliminar este alumno?');
     if (confirmar) {
-      onDelete(id); 
+      onDelete(id);
     }
   };
 
   return (
-    <div>
+    <div className="lista-alumnos">
       <h2>Lista de Alumnos</h2>
       {alumnos.map((alumno) => (
-        <div
-          key={alumno.id}
-          style={{
-            background: '#222',
-            color: 'white',
-            padding: '1rem',
-            margin: '1rem 0',
-            borderRadius: '8px'
-          }}
-        >
-          <strong>{alumno.nombre} {alumno.apellido}</strong> - LU: {alumno.id}<br />
-          <button onClick={() => navigate(`/alumnos/${alumno.id}`)}>Ver Detalles</button>
-          <button onClick={() => navigate(`/alumnos/${alumno.id}/editar`)}>Editar</button>
-          <button onClick={() => handleDelete(alumno.id)}>Eliminar</button>
+        <div key={alumno.id} className="alumno-card">
+          <p><strong>{alumno.nombre} {alumno.apellido}</strong> - LU: {alumno.id}</p>
+          <div className="alumno-botones">
+            <button onClick={() => navigate(`/alumnos/${alumno.id}`)}>Ver Detalles</button>
+            <button onClick={() => navigate(`/alumnos/${alumno.id}/editar`)}>Editar</button>
+            <button onClick={() => handleDelete(alumno.id)}>Eliminar</button>
+          </div>
         </div>
       ))}
     </div>
@@ -35,4 +28,5 @@ const AlumnoLista = ({ alumnos, onDelete }) => {
 };
 
 export default AlumnoLista;
+
 

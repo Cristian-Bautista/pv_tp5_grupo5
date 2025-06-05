@@ -1,5 +1,5 @@
 body {
-  background-color: #dd84b9; 
+  background-color: #ebb8d6; 
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -27,3 +27,145 @@ body {
   display: flex;
   align-items: center;
 }
+/*Formulario*/
+
+.formulario-alumno {
+  padding: 2rem;
+  color: #080808;
+  font-size: 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.formulario-alumno h2 {
+  width: 100%;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.formulario-alumno label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  color: black;
+  font-size: 1rem;
+}
+
+.formulario-alumno input {
+  padding: 0.4rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 180px;
+}
+
+.formulario-alumno button {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.input-lu {
+  background-color: #d794e7;
+  color: #222;
+  font-weight: bold;
+  border: 1px solid #aa88cc;
+}
+
+/*lista de alumnos*/
+
+.lista-alumnos {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lista-alumnos h2 {
+  font-size: 2rem;
+  color: #131212;
+  margin-bottom: 1.5rem;
+}
+
+.alumno-card {
+  background-color: #e682b1;
+  color: rgb(2, 2, 2);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+.alumno-card p {
+  margin: 0 0 0.5rem;
+}
+
+.alumno-botones button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: rgb(14, 13, 13);
+  background-color: #c43e9b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.alumno-botones button:hover {
+  background-color: #941474;
+}
+
+.detalle-alumno-card {
+  background: linear-gradient(135deg, #d44dac, #e248bc);
+  color: #050505;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  margin: 2rem auto; 
+  text-align: left;  
+}
+
+.alumno-item {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem auto;
+  box-shadow: 0 0 8px rgba(12, 11, 11, 0.5);
+  max-width: 600px;
+  text-align: left;
+}
+
+.acerca-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f5b8e0; 
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+.acerca-container h2 {
+  font-size: 2rem;
+  color: #f00969;
+  margin-bottom: 1rem;
+}
+
+.acerca-container p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+

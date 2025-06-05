@@ -7,7 +7,7 @@ const AlumnoDetalle = ({ alumnos }) => {
   if (!alumno) return <p>Alumno no encontrado.</p>;
 
   return (
-    <div style={{ padding: '1rem', background: '#111', color: '#fff' }}>
+    <div className="detalle-alumno-card">
       <h2>Detalles del Alumno</h2>
       <p><strong>LU:</strong> {alumno.id}</p>
       <p><strong>Nombre:</strong> {alumno.nombre} {alumno.apellido}</p>

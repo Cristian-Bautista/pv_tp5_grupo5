@@ -5,7 +5,7 @@ import NavBar from './components/NavBar';
 import AlumnoLista from './components/AlumnoLista';
 import AlumnoForm from './components/AlumnoForm';
 import AlumnoDetalle from './components/AlumnoDetalle';
-import AcercaDe from './components/AcercaDe';
+import AcercaDe from './components/acercade';
 import Home from './components/Home';
 
 function App() {

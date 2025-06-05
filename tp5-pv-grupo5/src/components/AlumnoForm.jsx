@@ -41,13 +41,11 @@ function AlumnoForm({ alumnos, setAlumnos }) {
     }
 
     if (esEdicion) {
-      
       const actualizados = alumnos.map((a) =>
         a.id === id ? alumno : a
       );
       setAlumnos(actualizados);
     } else {
-
       setAlumnos([...alumnos, alumno]);
     }
 
@@ -55,8 +53,9 @@ function AlumnoForm({ alumnos, setAlumnos }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="formulario-alumno">
       <h2>{esEdicion ? 'Editar Alumno' : 'Agregar Alumno'}</h2>
+
       <label>ID (LU):
         <input
           type="text"
@@ -65,8 +64,10 @@ function AlumnoForm({ alumnos, setAlumnos }) {
           onChange={handleChange}
           required
           disabled={esEdicion} 
+          className='input-lu'
         />
       </label>
+
       <label>Nombre:
         <input
           type="text"
@@ -76,6 +77,7 @@ function AlumnoForm({ alumnos, setAlumnos }) {
           required
         />
       </label>
+
       <label>Apellido:
         <input
           type="text"
@@ -85,6 +87,7 @@ function AlumnoForm({ alumnos, setAlumnos }) {
           required
         />
       </label>
+
       <label>Curso:
         <input
           type="text"
@@ -94,6 +97,7 @@ function AlumnoForm({ alumnos, setAlumnos }) {
           required
         />
       </label>
+
       <label>Email:
         <input
           type="email"
@@ -103,6 +107,7 @@ function AlumnoForm({ alumnos, setAlumnos }) {
           required
         />
       </label>
+
       <label>Domicilio:
         <input
           type="text"
@@ -112,6 +117,7 @@ function AlumnoForm({ alumnos, setAlumnos }) {
           required
         />
       </label>
+
       <label>Teléfono:
         <input
           type="tel"
@@ -121,6 +127,7 @@ function AlumnoForm({ alumnos, setAlumnos }) {
           required
         />
       </label>
+
       <button type="submit">{esEdicion ? 'Actualizar' : 'Guardar'}</button>
     </form>
   );
