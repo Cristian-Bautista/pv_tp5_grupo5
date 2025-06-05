@@ -14,7 +14,7 @@ const NavBar = () => {
         gap: '2rem',
         position: 'relative',
         left: '50%',
-        transform: 'translateX(-50%)', // centra la barra aunque esté dentro de un contenedor limitado
+        transform: 'translateX(-50%)',
         boxSizing: 'border-box',
       }}
     >
